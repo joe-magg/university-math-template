@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Math Assignment Template
+% LaTeX Template
+% Version 1.0 (December 4, 2024)
+%
+% This template originates from:
+% github.com/joe-magg
+%
+% Authors:
+% Joseph Maggio (joe@maggio.dev)
+%
+% License:
+% MIT License (https://opensource.org/license/MIT)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% BASIC DOCUMENT SETUP %%%
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}  % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+% \geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    			% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx} % Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+% ^ TeX will automatically convert eps --> pdf in pdflatex ^
+\usepackage{enumitem}
+
+%%% MATHEMATICAL SYMBOLS %%%
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+
+%%% HEADER SETUP %%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Foo Bar} % your name
+\fancyhead[C]{Class Name} % your class name - ex. MATH 1234
+\fancyhead[R]{Assignment I} % title of assignment
+
+%%% CUSTOM COMMANDS %%%
+\AddToHook{cmd/section/before}{\clearpage} % activate to start each section on a new page
+
+
+%%% TITLE SETUP %%%
+\title{Class Name - Assignment I} % your class name and title of assignment
+\author{Foo Bar - \texttt{example@university.edu}} % your name and university email
+\date{January 1, 1970} % activate to display a given date or no date
+
+
+%START OF DOCUMENT
+\begin{document}
+% \maketitle % activate to create title page
+
+\section*{Examples}
+
+% Inline
+Let $a$, $b$, $c$ be integers where $a > 0$, $b \leq 1$, and $c \geq 2$.
+
+% Piecewise
+Let $f(x) = \begin{cases}
+x & y > 1 \\
+x^2 & y \leq 1 \\
+\end{cases}$
+
+%Math Mode
+This is the binomial coefficient formula:
+\[
+C(n, k) = \frac{n!}{k!(n - k)!}
+\]
+
+%Solve Equation
+Now we will solve $C(4, 2)$:
+\begingroup
+\allowdisplaybreaks % activate for proof to span multiple pages
+\addtolength{\jot}{.25em} % edit number to adjust spacing between lines
+\begin{align*} % will align around the & on each line
+C(4, 2) &= \frac{4!}{2!(4 - 2)!} \tag*{def. of binomial coefficient} \\ 
+  &= \frac{4!}{2!2!} \tag*{simplify} \\ 
+  &= \frac{4 \times 3 \times 2 \times 1}{2 \times 1 \times 2 \times 1}  \tag*{expand} \\ 
+  &= \frac{4 \times 3}{2}  \tag*{eliminate common terms} \\ 
+  &= \frac{12}{2} \tag*{simplify} \\ 
+  &= 24
+\end{align*}
+\endgroup
+
+\section*{1a.}
+\section*{1b.}
+\section*{2.}
+\end{document}  
